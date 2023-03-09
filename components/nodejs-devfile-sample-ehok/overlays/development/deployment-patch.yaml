@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-devfile-sample-ehok
+  namespace: veda2019subs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:418a2a30fc881c645eb9179924adb932816ef114a0fb4e92b378c94aca7790c2
+        name: my-nodejs
+        resources: {}
+status: {}
