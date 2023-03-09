@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-devfile-sample-ehok
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:BEG8T-nodejs-devfile-sample-ehok
+      - image: quay.io/redhat-appstudio/user-workload@sha256:418a2a30fc881c645eb9179924adb932816ef114a0fb4e92b378c94aca7790c2
         name: my-nodejs
         ports:
         - containerPort: 3001
